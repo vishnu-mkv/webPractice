@@ -1,0 +1,39 @@
+.box {
+  margin: 20em;
+  height: 10em;
+  width: 10em;
+  background-color: rgb(250, 217, 174);
+  transition: transform ease-in-out 500ms;
+  display: grid;
+  place-items: center;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 7px 5px 5px rgb(254, 235, 212);
+}
+
+.box-1:hover {
+  transform: rotate(360deg);
+}
+
+.box-2:hover {
+  transform: translateX(300px);
+}
+
+.box-3:hover {
+  transform: translateY(-300px);
+}
+
+.box-4:hover {
+  transform: skewX(60deg);
+}
+
+.box-5:hover {
+  transform: skewY(60deg);
+}
+
+.box-6:hover {
+  transform: scale(6);
+}
+
+.box-7:hover {
+  transform: skewX(100deg);
+}

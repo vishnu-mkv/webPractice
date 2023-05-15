@@ -1,0 +1,103 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(254, 251, 247);
+  padding: 1em;
+}
+
+.grid {
+  display: block;
+  gap: 1em 2em;
+  justify-content: space-between;
+  border: 1px dashed #e7e7e7;
+  align-items: stretch;
+  height: 90vh;
+  overflow: scroll;
+  background-color: #eeeeee;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(4, 150px);
+}
+
+.grid:hover {
+}
+
+img {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 4px 5px 5px rgb(231, 231, 231);
+  position: relative;
+}
+
+img:hover {
+  transform: scale(2);
+  transition: all ease 0.2s;
+  object-fit: contain;
+  box-shadow: none;
+}
+
+p {
+  margin: 0;
+}
+
+.i1 {
+  animation: animate 4s ease-in-out infinite;
+}
+
+.grid-1 {
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: 2;
+}
+
+@keyframes animate {
+  10% {
+    grid-row: 3/4;
+    grid-column: 4/5;
+  }
+
+  20% {
+    grid-row: 3/4;
+    grid-column: 3/4;
+  }
+
+  30% {
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+
+  40% {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+
+  50% {
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+
+  60% {
+    grid-row: 4/5;
+    grid-column: 2/3;
+  }
+
+  70% {
+    grid-row: 4/5;
+    grid-column: 2/3;
+  }
+
+  80% {
+    grid-row: 4/5;
+    grid-column: 3/4;
+  }
+
+  90% {
+    grid-row: 4/5;
+    grid-column: 3/4;
+  }
+
+  100% {
+    grid-row: 4/5;
+    grid-column: 4/5;
+  }
+}
